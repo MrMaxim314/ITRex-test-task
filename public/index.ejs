@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Main page</title>
+</head>
+<body>
+
+    <section id="content">
+        <div class="container">
+            <h1>Exchange rate</h1>
+            <table class="cur-rates">
+                <tr>
+                    <th>Наименование иностранной валюты</th>
+                    <th>Количество единиц иностранной валюты</th>
+                    <th>Официальный курс</th>
+                </tr>
+                <% cur.forEach(function(item) { %>
+                <tr>
+                    <td><%= item.Cur_Name %></td>
+                    <td><%= item.Cur_Scale %></td>
+                    <td><%= item.Cur_OfficialRate %></td>
+                </tr>
+                <% }); %>
+            </table>
+
+        </div>
+    </section>
+
+</body>
+</html>

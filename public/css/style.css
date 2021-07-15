@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Candara', sans-serif;
+}
+
+.container{
+    width: 700px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+.cur-rates{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+th{
+    background-color: #a4de91;
+}
+
+th, td{
+    padding: 5px;
+}
+
+tr:nth-child(2n-1){
+    background-color: #e8e8e8;
+}
